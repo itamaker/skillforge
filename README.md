@@ -25,10 +25,10 @@ brew install itamaker/tap/skillforge
 
 Current release archives:
 
-- macOS (Apple Silicon/arm64): `skillforge_0.1.0_darwin_arm64.tar.gz`
-- macOS (Intel/x86_64): `skillforge_0.1.0_darwin_amd64.tar.gz`
-- Linux (arm64): `skillforge_0.1.0_linux_arm64.tar.gz`
-- Linux (x86_64): `skillforge_0.1.0_linux_amd64.tar.gz`
+- macOS (Apple Silicon/arm64): `skillforge_0.1.1_darwin_arm64.tar.gz`
+- macOS (Intel/x86_64): `skillforge_0.1.1_darwin_amd64.tar.gz`
+- Linux (arm64): `skillforge_0.1.1_linux_arm64.tar.gz`
+- Linux (x86_64): `skillforge_0.1.1_linux_amd64.tar.gz`
 
 Each archive contains a single executable: `skillforge`.
 
