@@ -1,0 +1,24 @@
+{
+  "name": "ResearchOps",
+  "description": "Analyze local paper notes, compare experiment logs, and summarize retrieval findings.",
+  "audience": "LLM platform engineers and applied researchers.",
+  "examples": [
+    "Compare the last two RAG experiments and summarize the regression.",
+    "Search the paper notes for benchmark setup differences."
+  ],
+  "tools": [
+    {
+      "name": "paper-search",
+      "command": "paper-search --query '{{query}}'",
+      "description": "Search a local paper and note index.",
+      "example": "paper-search --query 'retrieval augmentation benchmarks'"
+    },
+    {
+      "name": "exp-diff",
+      "command": "exp-diff --base {{base}} --candidate {{candidate}}",
+      "description": "Compare two experiment summary files.",
+      "example": "exp-diff --base runs/base.json --candidate runs/new.json"
+    }
+  ]
+}
+
