@@ -1,55 +1,87 @@
 # skillforge
 
-`skillforge` scaffolds OpenClaw-ready skill folders from a compact JSON spec.
+`skillforge` is a Go CLI that scaffolds OpenClaw-ready skill directories from a compact JSON spec.
 
-## Example
+It helps agent teams standardize skill packaging without building a separate UI or internal generator service.
+
+## Quickstart
+
+### Install
+
+Install with your preferred method:
 
 ```bash
-go run . init -spec examples/skill.json -out /tmp/research-skill
+# From the custom tap
+brew tap itamaker/tap https://github.com/itamaker/homebrew-tap
+brew install itamaker/tap/skillforge
 ```
 
-The command creates:
+```bash
+# Or install from source
+go install github.com/itamaker/skillforge@latest
+```
+
+<details>
+<summary>You can also download binaries from <a href="https://github.com/itamaker/skillforge/releases">GitHub Releases</a>.</summary>
+
+Current release archives:
+
+- macOS (Apple Silicon/arm64): `skillforge_0.1.0_darwin_arm64.tar.gz`
+- macOS (Intel/x86_64): `skillforge_0.1.0_darwin_amd64.tar.gz`
+- Linux (arm64): `skillforge_0.1.0_linux_arm64.tar.gz`
+- Linux (x86_64): `skillforge_0.1.0_linux_amd64.tar.gz`
+
+Each archive contains a single executable: `skillforge`.
+
+</details>
+
+If the repository is still private, release-based installs require GitHub access to the repository assets.
+
+### First Run
+
+Run:
+
+```bash
+skillforge init -spec examples/skill.json -out /tmp/research-skill
+```
+
+The generated directory includes:
 
 - `SKILL.md`
 - `manifest.json`
 - `bin/README.md`
 - `examples/usage.md`
 
-## Why it is useful
+## Requirements
 
-- Standardizes skill authoring for agent teams.
-- Speeds up internal tooling rollout without building a full UI.
-- Produces portable folders that can be moved into OpenClaw-style workspaces.
+- Go `1.22+`
 
-## Install
-
-From source:
+## Run
 
 ```bash
-go install github.com/itamaker/skillforge@latest
+go run . init -spec examples/skill.json -out /tmp/research-skill
 ```
 
-From Homebrew after you publish a tap formula:
+Use `-force` if you want to overwrite an existing output directory.
+
+## Build From Source
 
 ```bash
-brew tap itamaker/tap https://github.com/itamaker/homebrew-tap
-brew install itamaker/tap/skillforge
+make build
 ```
-
-## Repo-Ready Files
-
-- `.github/workflows/ci.yml`
-- `.github/workflows/release.yml`
-- `.goreleaser.yaml`
-- `PUBLISHING.md`
-- `scripts/render-homebrew-formula.sh`
-
-## Release
 
 ```bash
-git tag v0.1.0
-git push origin v0.1.0
+go build -o dist/skillforge .
 ```
 
-The tagged release workflow publishes multi-platform binaries and `checksums.txt`, which you can feed into the Homebrew formula renderer.
-The generated formula should be committed to `https://github.com/itamaker/homebrew-tap`.
+## What It Does
+
+1. Loads a compact JSON skill spec.
+2. Validates required fields such as `name`, `description`, and `tools`.
+3. Generates a portable skill folder with docs and manifest files.
+4. Produces output that can be moved into OpenClaw-style agent workspaces.
+
+## Notes
+
+- Use `examples/skill.json` as a starting point for new skill definitions.
+- Maintainer release steps live in `PUBLISHING.md`.
