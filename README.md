@@ -94,11 +94,11 @@ go build -o dist/skillforge .
 
 ## Contributors ✨
 
-| [![itamaker][avatar-itamaker]][author-itamaker] |
+| [![Zhaoyang Jia][avatar-zhaoyang]][author-zhaoyang] |
 | --- |
-| [itamaker][author-itamaker] |
+| [Zhaoyang Jia][author-zhaoyang] |
 
 
 
-[author-itamaker]: https://github.com/itamaker
-[avatar-itamaker]: https://images.weserv.nl/?url=https://github.com/itamaker.png&h=120&w=120&fit=cover&mask=circle&maxage=7d
+[author-zhaoyang]: https://github.com/itamaker
+[avatar-zhaoyang]: https://images.weserv.nl/?url=https://github.com/itamaker.png&h=120&w=120&fit=cover&mask=circle&maxage=7d
