@@ -26,7 +26,7 @@ The command creates:
 From source:
 
 ```bash
-go install github.com/YOUR_GITHUB_USER/skillforge@latest
+go install github.com/itamaker/skillforge@latest
 ```
 
 From Homebrew after you publish a tap formula:
