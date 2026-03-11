@@ -6,6 +6,8 @@
 
 It helps agent teams standardize skill packaging without building a separate UI or internal generator service.
 
+![skillforge social preview](docs/images/social-preview.png)
+
 ## Support
 
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/amaker)
