@@ -1,8 +1,14 @@
 # skillforge
 
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+
 `skillforge` is a Go CLI that scaffolds OpenClaw-ready skill directories from a compact JSON spec.
 
 It helps agent teams standardize skill packaging without building a separate UI or internal generator service.
+
+## Support
+
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/amaker)
 
 ## Quickstart
 
@@ -85,3 +91,14 @@ go build -o dist/skillforge .
 
 - Use `examples/skill.json` as a starting point for new skill definitions.
 - Maintainer release steps live in `PUBLISHING.md`.
+
+## Contributors ✨
+
+| [![itamaker][avatar-itamaker]][author-itamaker] |
+| --- |
+| [itamaker][author-itamaker] |
+
+
+
+[author-itamaker]: https://github.com/itamaker
+[avatar-itamaker]: https://images.weserv.nl/?url=https://github.com/itamaker.png&h=120&w=120&fit=cover&mask=circle&maxage=7d
