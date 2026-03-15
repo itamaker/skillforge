@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/jonny/current-projects/skillforge/internal/app"
+	"github.com/itamaker/skillforge/internal/app"
 )
 
 func main() {

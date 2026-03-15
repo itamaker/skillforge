@@ -1,4 +1,4 @@
-module github.com/jonny/current-projects/skillforge
+module github.com/itamaker/skillforge
 
 go 1.23.0
 
