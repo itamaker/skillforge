@@ -2,9 +2,9 @@
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 
-`skillforge` is a Go CLI that scaffolds OpenClaw-ready skill directories from a compact JSON spec.
+`skillforge` is a Go CLI for drafting and scaffolding OpenClaw-ready skills from briefs, tool catalogs, and JSON specs.
 
-It helps agent teams standardize skill packaging without building a separate UI or internal generator service.
+It helps agent teams standardize skill packaging and bootstrap new skills without building a separate internal generator service.
 
 ![skillforge social preview](docs/images/social-preview.png)
 
@@ -25,10 +25,10 @@ brew install itamaker/tap/skillforge
 
 Current release archives:
 
-- macOS (Apple Silicon/arm64): `skillforge_0.1.1_darwin_arm64.tar.gz`
-- macOS (Intel/x86_64): `skillforge_0.1.1_darwin_amd64.tar.gz`
-- Linux (arm64): `skillforge_0.1.1_linux_arm64.tar.gz`
-- Linux (x86_64): `skillforge_0.1.1_linux_amd64.tar.gz`
+- macOS (Apple Silicon/arm64): `skillforge_0.2.0_darwin_arm64.tar.gz`
+- macOS (Intel/x86_64): `skillforge_0.2.0_darwin_amd64.tar.gz`
+- Linux (arm64): `skillforge_0.2.0_linux_arm64.tar.gz`
+- Linux (x86_64): `skillforge_0.2.0_linux_amd64.tar.gz`
 
 Each archive contains a single executable: `skillforge`.
 
