@@ -1,0 +1,26 @@
+[
+  {
+    "name": "retrieval-score",
+    "command": "retrieval-score --run runs/latest.json --qrels data/qrels.json",
+    "description": "Score retrieval benchmarks and list the highest-impact misses.",
+    "example": "retrieval-score --run runs/candidate.json --qrels data/qrels.json",
+    "inputs": ["run", "qrels"],
+    "outputs": ["metrics", "misses"]
+  },
+  {
+    "name": "trace-scan",
+    "command": "trace-scan --input traces/agent.jsonl",
+    "description": "Scan agent traces for flaky execution paths and tool failures.",
+    "example": "trace-scan --input traces/nightly.jsonl",
+    "inputs": ["input"],
+    "outputs": ["clusters", "outliers"]
+  },
+  {
+    "name": "dataset-scan",
+    "command": "dataset-scan --train data/train.jsonl --eval data/eval.jsonl",
+    "description": "Inspect train and eval datasets for overlap, duplication, and label issues.",
+    "example": "dataset-scan --train data/train.jsonl --eval data/eval.jsonl",
+    "inputs": ["train", "eval"],
+    "outputs": ["issues", "summary"]
+  }
+]
