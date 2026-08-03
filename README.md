@@ -110,6 +110,21 @@ go build -o dist/skillforge .
 - Use `examples/skill.json` as a starting point for new skill definitions.
 - Maintainer release steps live in `PUBLISHING.md`.
 
+## Claude Code skill
+
+This repo also ships a Claude Code skill. Install standalone:
+
+```bash
+npx skills add itamaker/forge-skill
+```
+
+Or via the [`itamaker/skills`](https://github.com/itamaker/skills) plugin marketplace:
+
+```text
+/plugin marketplace add itamaker/skills
+/plugin install forge-skill@itamaker-skills
+```
+
 ## Contributors ✨
 
 | [![Zhaoyang Jia][avatar-zhaoyang]][author-zhaoyang] |
